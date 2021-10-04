@@ -17,15 +17,7 @@ Runtime Tokio.
 How to build frontend:<br/>
 install nodejs (v16.7.0) and npm (v7.20.3)
 
-npm init -y<br/>
-npm install --save-dev webpack@5.56.0 webpack-cli<br/>
-npm install --save-dev html-loader<br/>
-npm install --save-dev css-loader<br/>
-npm install --save-dev string-replace-loader<br/>
-npm install --save-dev clean-webpack-plugin<br/>
-npm install --save-dev html-webpack-plugin<br/>
-npm install --save-dev mini-css-extract-plugin
-
+npm install<br/>
 npm run build
 
 Frontend assets are in www/src and built to www/dist
