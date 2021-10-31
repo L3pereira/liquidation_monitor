@@ -1,6 +1,6 @@
 # liquidation_monitor
 
-<img src="exchange_rates.jpg" alt="Italian Trulli">
+<img src="exchange_rates.jpg">
 
 Backend is built with rustc 1.53.0 (53cb7b09b 2021-06-17);<br/>
 Change the config.json
@@ -36,4 +36,4 @@ stream_management_task >--call--> <br/>
 websocket_msg_process >--call--> <br/>
 deserialize_stream >--return via channel --> <br/>
 stream_init_task  >-- Actix Actor Broker--> <br/>
-Actix Websocket--> Frontend ("ws://*YOUR IP*:*PORT*/stream" in config.json)
+Actix Websocket--> Frontend ("ws://\<YOUR IP\>:\<PORT\>/stream" in config.json)
