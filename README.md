@@ -1,6 +1,6 @@
 # liquidation_monitor
 
-<img src="exchange_rates.jpg">
+![ScreenShot](exchange_rates.JPG)
 
 Backend is built with rustc 1.53.0 (53cb7b09b 2021-06-17);<br/>
 Change the config.json
