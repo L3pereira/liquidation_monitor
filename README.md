@@ -1,11 +1,14 @@
 # liquidation_monitor
 
+<img src="exchange_rates.jpg" alt="Italian Trulli">
+
 Backend is built with rustc 1.53.0 (53cb7b09b 2021-06-17);<br/>
 Change the config.json
 
 "server_address": "Your IP",<br/>
 "server_port": "An available port"<br/>
 
+Chain Id examples (https://observer.starport.services/): bombay-12, columbus-5 
 
 Logs are stored in logs folder by level<br/>
 you can choose the logs level (ex warn or error) in log_config.yaml
@@ -18,13 +21,7 @@ How to build frontend:<br/>
 install nodejs (v16.7.0) and npm (v7.20.3)
 
 npm init -y<br/>
-npm install --save-dev webpack@5.56.0 webpack-cli<br/>
-npm install --save-dev html-loader<br/>
-npm install --save-dev css-loader<br/>
-npm install --save-dev string-replace-loader<br/>
-npm install --save-dev clean-webpack-plugin<br/>
-npm install --save-dev html-webpack-plugin<br/>
-npm install --save-dev mini-css-extract-plugin
+npm install
 
 npm run build
 

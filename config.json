@@ -1,6 +1,6 @@
 {
     "web_socket_url": "wss://observer.terra.dev",
-    "web_socket_feed": "{\"subscribe\": \"new_block\", \"chain_id\": \"tequila-0004\"}",
+    "web_socket_feed": "{\"subscribe\": \"new_block\", \"chain_id\": \"bombay-12\"}",
     "server_address": "127.0.0.1",
     "server_port": 8080
 }

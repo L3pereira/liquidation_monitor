@@ -75,7 +75,15 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for WsSession  {
             Ok(ws::Message::Pong(_)) => {
                 self.hb = Instant::now();
             }
-            Ok(ws::Message::Text(text)) => ctx.text(text),
+            Ok(ws::Message::Text(text)) => {
+                if text == "PONG"{
+                    println!("WS PONG");
+                    self.hb = Instant::now();
+                }
+                else{
+                    ctx.text(text);
+                }
+            },
             Ok(ws::Message::Binary(bin)) => ctx.binary(bin),
             Ok(ws::Message::Close(reason)) => {
                 ctx.close(reason);
@@ -107,8 +115,9 @@ impl WsSession  {
                 // don't try to send a ping
                 return;
             }
-
-            ctx.ping(b"");
+            println!("WS PING");
+            ctx.text("PING")
+            // ctx.ping(b"");
         });
     }
 }
