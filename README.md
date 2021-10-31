@@ -36,4 +36,4 @@ stream_management_task >--call--> <br/>
 websocket_msg_process >--call--> <br/>
 deserialize_stream >--return via channel --> <br/>
 stream_init_task  >-- Actix Actor Broker--> <br/>
-Actix Websocket--> Frontend ("ws://*YOUR IP*:*PORT*/stream" in config.json)
+Actix Websocket--> Frontend ("ws://\<YOUR IP\>:\<PORT\>/stream" in config.json)
